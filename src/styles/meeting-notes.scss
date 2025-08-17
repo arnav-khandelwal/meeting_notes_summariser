@@ -1,3 +1,4 @@
+
 // Beige-themed color palette
 $beige: #f5f5dc;
 $beige-dark: #e6e6c3;
@@ -8,6 +9,11 @@ $secondary: #d9cbb3;
 $text: #3e3e3e;
 $border: #e0dacd;
 
+// Custom selection color
+::selection {
+  background: #f8f0b3; // very light beige 
+  color: $text;
+}
 
 html, body {
   height: 100%;
@@ -42,6 +48,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
 }
 
 .header {
@@ -59,6 +66,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 600px;
 }
 
 .upload-label {
@@ -71,6 +80,43 @@ input[type="file"] {
   margin-bottom: 1rem;
 }
 
+.file-selected {
+  color: $primary;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+.prompt-section {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.prompt-label {
+  color: $primary;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.prompt-input {
+  width: 100%;
+  border: 1px solid $border;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: $beige-light;
+  color: $text;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.prompt-input:focus {
+  outline: none;
+  border-color: $primary;
+}
+
 .summarize-btn {
   background: $primary;
   color: $beige-light;
@@ -81,10 +127,16 @@ input[type="file"] {
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
-.summarize-btn:hover {
+
+.summarize-btn:hover:not(:disabled) {
   background: $accent;
+}
+
+.summarize-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .summary-section {
@@ -93,6 +145,8 @@ input[type="file"] {
   padding: 1.5rem;
   margin-bottom: 2rem;
   border: 1px solid $border;
+  width: 100%;
+  max-width: 600px;
 }
 
 .summary-title {
@@ -106,12 +160,30 @@ input[type="file"] {
   color: $text;
   font-size: 1.05rem;
   line-height: 1.6;
+  
+  &.editable {
+    width: 100%;
+    border: 1px solid $border;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-family: inherit;
+    background: $beige-light;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+  }
+  
+  &.editable:focus {
+    outline: none;
+    border-color: $primary;
+  }
 }
 
 .share-section {
   display: flex;
   gap: 1rem;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .share-btn {
@@ -125,6 +197,106 @@ input[type="file"] {
   cursor: pointer;
   transition: background 0.2s;
 }
+
 .share-btn:hover {
   background: $primary;
+}
+
+// Email dialog styles
+.email-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.email-dialog {
+  background: $beige;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid $border;
+  box-shadow: 0 8px 32px rgba(140, 123, 90, 0.15);
+  width: 90%;
+  max-width: 500px;
+}
+
+.email-dialog h3 {
+  color: $primary;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.email-dialog label {
+  color: $primary;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.email-input {
+  width: 100%;
+  border: 1px solid $border;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: $beige-light;
+  color: $text;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: $primary;
+}
+
+.email-dialog-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.cancel-btn {
+  background: transparent;
+  color: $primary;
+  border: 1px solid $primary;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancel-btn:hover {
+  background: $primary;
+  color: $beige-light;
+}
+
+.send-btn {
+  background: $primary;
+  color: $beige-light;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.send-btn:hover:not(:disabled) {
+  background: $accent;
+}
+
+.send-btn:disabled, .cancel-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }

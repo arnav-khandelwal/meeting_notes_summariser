@@ -1,0 +1,28 @@
+Meeting Notes - Product Team Weekly Sync
+Date: August 17, 2025
+Attendees: John Smith, Sarah Johnson, Mike Chen, Lisa Wang
+
+Agenda:
+1. Q4 roadmap review
+2. User feedback analysis
+3. Technical debt priorities
+4. Marketing collaboration updates
+
+Discussion Points:
+
+John presented the Q4 roadmap. We need to prioritize the mobile app redesign and implement the new dashboard features. The team agreed that user experience should be our top focus.
+
+Sarah shared insights from recent user interviews. Users are requesting better notification settings and faster loading times. We should address these issues in the next sprint.
+
+Mike discussed technical debt. The authentication system needs refactoring, and we should migrate to the new database schema. This will require 2-3 weeks of development time.
+
+Lisa updated us on marketing collaboration. The new landing page design is ready for development. We need to coordinate with the marketing team for the product launch campaign.
+
+Action Items:
+- John will finalize the Q4 roadmap by Friday
+- Sarah will create user stories for notification improvements
+- Mike will start the authentication system refactoring next week
+- Lisa will schedule a meeting with the marketing team
+- Team will review the new landing page design in tomorrow's standup
+
+Next Meeting: August 24, 2025

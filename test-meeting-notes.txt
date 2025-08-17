@@ -1,0 +1,65 @@
+OPTICA – Team Meeting Notes
+
+Date: August 17, 2025
+Attendees: Arnav Khandelwal (Core Tech Team), [Add names of other attendees]
+⸻
+
+Agenda
+	1.	Event/Workshop Planning
+	2.	Membership & Outreach
+	3.	Technical Projects & Research
+	4.	Collaboration & Partnerships
+
+⸻
+
+Discussion Points
+
+Event/Workshop Planning:
+	•	Reviewed upcoming technical workshops and paper presentation sessions.
+	•	Proposal to host a guest lecture on Photonics/Optics.
+	•	Tentative event timeline for September shared.
+
+Membership & Outreach:
+	•	Membership drive performance discussed; 20+ new members joined this semester.
+	•	Suggestions to improve awareness through social media campaigns and posters.
+
+Technical Projects & Research:
+	•	Ongoing student research projects presented.
+	•	Arnav shared updates on algorithm visualizer integration for optics simulations.
+	•	Interest shown in initiating an internal hackathon focusing on optics applications.
+
+Collaboration & Partnerships:
+	•	Proposal to collaborate with DSC and other technical societies on joint events.
+	•	Plan to connect with industry experts for mentorship and internships.
+
+⸻
+
+Action Items
+	1.	[Name] – Finalize September event schedule by August 22nd.
+	2.	[Name] – Design and share posters for membership drive by August 20th.
+	3.	Arnav – Prepare project demo for optics-related tool by August 25th.
+	4.	[Name] – Reach out to guest speakers and confirm availability by August 28th.
+	5.	[Name] – Draft proposal for OPTICA-DSC collaboration before next meeting.
+
+⸻
+
+Next Sprint/Timeline
+	•	Focus on event execution and technical project progress.
+	•	Weekly progress check-ins every Friday evening.
+	•	Sprint review on August 30th, 2025.
+
+⸻
+
+Key Decisions Made
+	•	Approved guest lecture on Photonics for September.
+	•	Agreed to initiate optics hackathon in October.
+	•	Social media campaign for outreach will start next week.
+	•	Budget of ₹10,000 allocated for upcoming event logistics.
+
+⸻
+
+Follow-up Meeting: August 24, 2025 at 5:00 PM
+Notes taken by: [Your Name]
+
+⸻
+
