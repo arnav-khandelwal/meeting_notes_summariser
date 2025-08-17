@@ -55,8 +55,6 @@ function App() {
   const handleShare = (platform) => {
     if (platform === 'Email') {
       setShowEmailDialog(true);
-    } else {
-      alert(`Sharing to ${platform} - Feature coming soon!`);
     }
   };
 
@@ -158,12 +156,6 @@ function App() {
           <div className="share-section">
             <button className="share-btn" onClick={() => handleShare('Email')}>
               Share via Email
-            </button>
-            <button className="share-btn" onClick={() => handleShare('Slack')}>
-              Share to Slack
-            </button>
-            <button className="share-btn" onClick={() => handleShare('Copy Link')}>
-              Copy Link
             </button>
           </div>
         </div>
