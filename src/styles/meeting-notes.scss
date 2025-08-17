@@ -1,0 +1,112 @@
+// Beige-themed color palette
+$beige: #f5f5dc;
+$beige-dark: #e6e6c3;
+$beige-light: #faf9f6;
+$accent: #bfae8e;
+$primary: #8c7b5a;
+$secondary: #d9cbb3;
+$text: #3e3e3e;
+$border: #e0dacd;
+
+body {
+  background: $beige-light;
+  color: $text;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app-container {
+  background: $beige;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(140, 123, 90, 0.08);
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border: 1px solid $border;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: $primary;
+}
+
+.upload-section {
+  background: $beige-dark;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid $border;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-label {
+  color: $primary;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+input[type="file"] {
+  margin-bottom: 1rem;
+}
+
+.summarize-btn {
+  background: $primary;
+  color: $beige-light;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+.summarize-btn:hover {
+  background: $accent;
+}
+
+.summary-section {
+  background: $secondary;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid $border;
+}
+
+.summary-title {
+  color: $primary;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.summary-content {
+  color: $text;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.share-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.share-btn {
+  background: $accent;
+  color: $beige-light;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.share-btn:hover {
+  background: $primary;
+}
